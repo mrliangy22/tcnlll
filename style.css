@@ -1,24 +1,33 @@
-/* 云淡风轻风格继续保留上半部分，只改以下几块 */
+/* —— 云淡风轻·首页样式 —— */
 
 header {
-  padding: 4rem 1rem;
+  padding: 6rem 1rem 4rem;
   background: linear-gradient(to bottom, #fafafa, #f5f5f3);
   border-bottom: 1px solid #e0e0dc;
 }
 
 .links a {
   display: block;
-  font-size: 2rem;          /* 字体更大 */
+  font-size: 1.5rem;        /* 普通文字字号 */
   color: #4a6fa5;
   text-decoration: none;
   margin: 1rem 0;
-  transition: color 0.3s ease;
   letter-spacing: 0.5px;
+  transition: color 0.3s ease;
 }
 
 .links a:hover {
   color: #1f4b75;
   text-decoration: underline;
+}
+
+/* 首字母放大 */
+.initial {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.4rem;        /* 首字母更大 */
+  color: #2f2f2f;
+  vertical-align: baseline;
+  margin-right: 2px;
 }
 
 footer {
