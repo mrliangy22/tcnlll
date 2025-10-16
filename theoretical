@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Theoretical — TCN + 3L</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Theoretical</h1>
+    <p><a href="index.html">← Back to Home</a></p>
+  </header>
+
+  <main>
+    <ul>
+      <li><a href="#">Dynamical System</a></li>
+      <li><a href="#">Stochastic Differential Equations</a></li>
+      <li><a href="#">Statistical and Complex Physics</a></li>
+      <li><a href="#">Complex Networks</a></li>
+      <li><a href="#">Information Theory</a></li>
+      <li><a href="#">Differential Geometry</a></li>
+    </ul>
+  </main>
+
+  <footer>
+    <p>∞ Theoretical · TCN + 3L ∞</p>
+  </footer>
+</body>
+</html>
