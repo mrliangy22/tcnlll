@@ -1,42 +1,44 @@
-/* —— 云淡风轻·首页样式 —— */
-
-header {
-  padding: 6rem 1rem 4rem;
-  background: linear-gradient(to bottom, #fafafa, #f5f5f3);
-  border-bottom: 1px solid #e0e0dc;
+/* 主页头部留白保持不变，如已存在可不改 */
+header{
+  padding:6rem 1rem 4rem;
+  background:linear-gradient(to bottom,#fafafa,#f5f5f3);
+  border-bottom:1px solid #e0e0dc;
 }
 
-.links a {
-  display: block;
-  font-size: 1.5rem;        /* 普通文字字号 */
-  color: #4a6fa5;
-  text-decoration: none;
-  margin: 1rem 0;
-  letter-spacing: 0.5px;
-  transition: color 0.3s ease;
+/* 两行布局 */
+.links .row{
+  display:flex;
+  justify-content:center;
+  gap:2.2rem;          /* 行内词之间的距离 */
+  margin:0.6rem 0;
+  flex-wrap:wrap;      /* 小屏可自动换行 */
 }
 
-.links a:hover {
-  color: #1f4b75;
-  text-decoration: underline;
+/* 词本体样式（其余页面样式保持不动） */
+.links a{
+  display:inline-flex;
+  align-items:baseline;
+  font-size:1.5rem;    /* 普通字 */
+  color:#4a6fa5;
+  text-decoration:none;
+  letter-spacing:.5px;
+  transition:color .3s ease;
 }
+
+.links a:hover{ color:#1f4b75; text-decoration:underline; }
 
 /* 首字母放大 */
-.initial {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.4rem;        /* 首字母更大 */
-  color: #2f2f2f;
-  vertical-align: baseline;
-  margin-right: 2px;
+.initial{
+  font-family:'Playfair Display',serif;
+  font-size:2.4rem;    /* 大首字母 */
+  color:#2f2f2f;
+  line-height:1;
+  margin-right:3px;
 }
 
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #888;
-  border-top: 1px solid #e4e4e0;
-  background: #fafafa;
-  letter-spacing: 1px;
+/* 小屏时改为竖排，避免拥挤 */
+@media (max-width:520px){
+  .links .row{ gap:.4rem; }
+  .links a{ font-size:1.35rem; }
+  .initial{ font-size:2.1rem; }
 }
-
